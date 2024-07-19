@@ -4,7 +4,7 @@ import {ref} from "vue";
 import {i18n} from "@/plugins/i18n.config";
 
 const radios = ref()
-const changeLanguage = (language: string): void => {
+const changeLanguage = (language: 'en' | 'es'): void => {
   i18n.global.locale = language;
 }
 </script>
